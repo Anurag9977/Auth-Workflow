@@ -8,13 +8,10 @@ const emailParam = urlParams.get("email");
 verifyEmailBtn.addEventListener("click", async (e) => {
   e.preventDefault();
   try {
-    const { data } = await axios.patch(
-      "http://localhost:5000/api/v1/auth/verify-email",
-      {
-        verificationToken: tokenParam,
-        email: emailParam,
-      }
-    );
+    const { data } = await axios.patch("/api/v1/auth/verify-email", {
+      verificationToken: tokenParam,
+      email: emailParam,
+    });
     successMsg.innerText = data.message;
     verifyEmailLogin.style.display = "block";
   } catch (error) {

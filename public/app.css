@@ -104,7 +104,13 @@ body {
   box-shadow: 1px 1px 5px grey;
   padding: 5px 10px;
 }
-
+.container p {
+  text-align: justify;
+  margin: 50px 0 0 20px;
+  padding: 20px 0 0 10px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .container > h1 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -183,4 +189,13 @@ body {
   border: 2px solid rgb(190, 190, 190);
   border-radius: 10px;
   cursor: pointer;
+}
+
+.loading-gif {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50%;
+  object-fit: contain;
 }

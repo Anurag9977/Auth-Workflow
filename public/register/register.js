@@ -1,6 +1,7 @@
 const register = document.getElementById("register");
 const registerBtn = document.getElementById("register-btn");
 const successRegMsg = document.getElementById("success-reg-msg");
+const loadingGif = document.querySelector(".loading-gif");
 let registerPayload = {};
 
 register.addEventListener("change", (e) => {
@@ -11,10 +12,12 @@ register.addEventListener("change", (e) => {
 
 registerBtn.addEventListener("click", async (e) => {
   try {
-    const { data } = await axios.post(
-      "http://localhost:5000/api/v1/auth/register",
-      { ...registerPayload }
-    );
+    registerBtn.style.display = "none";
+    loadingGif.style.display = "block";
+    const { data } = await axios.post("/api/v1/auth/register", {
+      ...registerPayload,
+    });
+    loadingGif.style.display = "none";
     successRegMsg.innerText = data.message;
   } catch (error) {
     alert(error.response.data.message);

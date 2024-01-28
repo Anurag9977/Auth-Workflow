@@ -25,14 +25,11 @@ submitButton.addEventListener("click", async (e) => {
     return;
   }
   try {
-    const { data } = await axios.patch(
-      "http://localhost:5000/api/v1/auth/reset-password",
-      {
-        email: emailParam,
-        passwordResetToken: tokenParam,
-        newPassword,
-      }
-    );
+    const { data } = await axios.patch("/api/v1/auth/reset-password", {
+      email: emailParam,
+      passwordResetToken: tokenParam,
+      newPassword,
+    });
     passwordResetMessage.innerText = data.message;
     verifyEmailLogin.style.display = "block";
   } catch (error) {
