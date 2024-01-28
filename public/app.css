@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px 120px;
+}
+
+.login-register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 120px;
+}
+
+.content {
+  width: 50%;
+  padding: 0px 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+.content > h1 > span {
+  color: rgb(40, 104, 241);
+}
+
+.content p > span {
+  color: #fff;
+  background-color: rgb(40, 104, 241);
+}
+
+.content p {
+  text-align: justify;
+  margin: 50px 0 0 20px;
+  padding: 20px 0 0 10px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content .auth-btn {
+  margin-top: 90px;
+}
+
+.content .auth-btn button {
+  background-color: rgb(40, 104, 241);
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.content .auth-btn button:hover {
+  background-color: rgb(75, 128, 244);
+}
+
+.content .auth-btn button a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+.forgot-password {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(40, 104, 241);
+}
+.forgot-password:hover {
+  color: rgb(32, 8, 245);
+}
+
+.background-image {
+  width: 50%;
+}
+
+.background-image img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  width: 500px;
+  border: 2px solid darkgray;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px grey;
+  padding: 5px 10px;
+}
+
+.container > h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+}
+.container > h1 > span {
+  color: rgb(40, 104, 241);
+}
+
+.name,
+.email {
+  margin-top: 50px;
+}
+
+.reg-email,
+.pwd {
+  margin-top: 10px;
+}
+
+.name,
+.reg-email,
+.email,
+.pwd,
+.verify-email,
+.submit-button {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  font-size: 20px;
+  width: 60%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(190, 190, 190);
+  border-radius: 10px;
+}
+
+.verify-email {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button {
+  margin-top: 30px;
+  background-color: rgb(40, 104, 241);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: rgb(75, 128, 244);
+}
+
+.submit-button > a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+#verify-email-login {
+  display: none;
+}
+
+.logout-button {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+  background-color: red;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: 2px solid rgb(190, 190, 190);
+  border-radius: 10px;
+  cursor: pointer;
+}
